@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+ 
+  <title>Form HTML</title>
+</head>
+<body>
+
+  <h1>فرم ثبت نام برنامه نویسی</h1>
+
+  <form >
+
+    <p>
+      <label for="username">نام کاربری:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="نام کاربری خود را وارد کنید"
+        minlength="3"
+        maxlength="15"
+        required
+      >
+    </p>
+
+    <p>
+      <label for="email">ایمیل:</label>
+      <input
+        type="ایمیل"
+        id="email"
+        name="email"
+        placeholder="ایمیل خود را وراد کنید"
+        required
+      >
+    </p>
+
+    <p>
+      <label for="password">رمز عبور:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="یک رمز عبور 8 کارکتری انتخاب کنید"
+        minlength="8"
+        required
+      >
+    </p>
+
+    <p>
+      <label for="course">زبان برنامه نویسی:</label>
+
+      <select id="course" name="course" required>
+        <option value="">-- زبان را انتخاب کنید --</option>
+
+        <optgroup label="Frontend">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">JavaScript</option>
+        </optgroup>
+
+        <optgroup label="Backend">
+          <option value="python">Python</option>
+          <option value="nodejs">Node.js</option>
+          <option value="php">PHP</option>
+        </optgroup>
+      </select>
+    </p>
+
+    <p>
+      <label for="message">پیام شما:</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        cols="35"
+        placeholder="پیام خود را بنویسید"
+      ></textarea>
+    </p>
+
+    <p>
+      <button type="submit">ارسال اطلاعات</button>
+    </p>
+
+  </form>
+
+</body>
+</html>
