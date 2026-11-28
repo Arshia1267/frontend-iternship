@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <div dir="rtl"></div>
+    </head>
+    <body>
+        <h1>فرم ثبت نام</h1>
+        <form >
+            <label for="name">نام و نام خانوادگی</label>
+            <input type="text"
+             id="name"
+             placeholder="نام و نام خانوادگی خود را وارد کنیم"
+             required
+             >
+             <br></br>
+             <label for="email"> ایمیل </label>
+             <input type="email"
+              id="email"
+              placeholder="ایمیل خود را وارد کنید"
+              required
+              >
+              <br></br>
+              <label for="password">رمز عبور</label>
+              <input type="password"
+              id="password"
+              placeholder="رمز عبور را وارد کنید"
+              minlength="8"
+              required
+              >
+              <br></br>
+              <label for="password">تکرار رمز عبور</label>
+              <input type="password"
+              id="password"
+              placeholder="رمز عبور را تکرار کنید"
+              minlength="8"
+              required
+              >
+              <br></br>
+              <label for="date">تاریخ تولد</label>
+              <input type="date"
+              id="date"
+              placeholder="تاریخ تولد را وارد کنید"
+              >
+              <br></br>
+              <input type="radio"
+              id="mail"
+              name="gender"
+              >
+              <label for="mail">اقا</label>
+              <input type="radio"
+              id="famail"
+              name="gender"
+              required
+              >
+              <label for="famail">خانوم</label>
+              <br></br>
+              <label for="City :">شهر</label>
+               <select name="City" id="City" required>
+                <option value="">شهر خود را انتخاب کنید</option>
+                <option value="Tehran">تهران</option>
+                <option value="Mashhad">مشهد</option>
+                <option value="Shiraz">شیراز</option>
+                <option value="Neishabor">نیشابور</option>
+                <option value="isfahan">اصفهان</option>
+               </select>
+               <br></br>
+               <legend>علاقه مندی ها</legend>
+               <input type="checkbox"
+                id="sport"
+                name="interests"
+                value="sport"
+                >
+                <label for="sport">ورزش</label>
+                <br></br>
+               <input type="checkbox"
+                id="music"
+                name="interests"
+                value="music"
+                >
+                <label for="sport">موزیک</label>
+                <br></br>
+               <input type="checkbox"
+                id="movi"
+                name="interests"
+                value="movi"
+                >
+                <label for="sport">فیلم</label>
+                <br></br>
+                <label for="text">توضیحات</label>
+                <textarea name="text" 
+                id="text"
+                rows="5"
+                cols="30"
+                placeholder="توضیحات">
+            </textarea>
+             <br></br>
+            <button type="submit">ارسال فرم </button>
+            
+        </form>
+    </body>
+</html>
